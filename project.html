@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project-yoogo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <header>
+        <!-- humber menui -->
+        <div class="hambuger">
+            <i class="fa-solid fa-bars" data-visible="true"></i>
+            <i class="fa-solid fa-close" data-visible="false"></i>
+             </div>
+             <!-- diktop-menu -->
+             <nav class="container  desktop-menu">
+                <!-- left- menu -->
+                   <ul id="left-menu" class="menus">
+                        <li><a href="#">our philosophy</a></li>
+                        <li><a href="#l">Houses</a></li>
+                        <li><a href="#">map</a></li>
+                 </ul >
+                  <h1>Retreatm5</h1>
+                   <!-- right- menu -->
+                        <ul id="right-menu" class="menus">
+                            <li><a href="#">Laisure</a></li>
+                            <li><a href="#">how to get there</a></li>
+                            <li><a href="#">contract</a></li>
+                        </ul>       
+                 
+                     </nav>       
+             <!-- mobile-menu -->
+             
+               <nav class="container mobile-menu"data-visible="false">
+                   <div class="navagition">
+              
+                <h1>Retreatm5</h1>
+                <ul id="mobile-menu" class="menus">
+                    <li><a href="#">our philosophy</a></li> 
+                    <li><a href="#">Houses</a></li>
+                    <li><a href="#">map</a></li>
+                    <li><a href="#">Laisure</a></li>
+                    <li><a href="#">how to get there</a></li>
+                    <li><a href="#">contract</a></li>
+                </ul>
+                <div class="mobile-menu-action">
+                   
+                        <a href="#" class="btn-primary">Book write</a>
+                         <a href="#" class="btn-secondary">write to us</a>
+                  
+
+                </div>
+
+                </div> 
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>
+                you cannot do yoga <br>
+                yoga is your natural state
+            </h1>
+            <button class="btn">learn more</button>
+        </div>
+    </section>
+
+    <section>
+ <div class="container yoga">
+        <div class="content">
+            <h1>you can always control what goes on inside</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis, illo. Repellat, fugit mollitia? Porro excepturi quos nobis. Corporis beatae optio impedit earum, minus itaque labore aliquam nobis, totam, est eius.</p>
+
+        </div>
+
+    </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <!-- box-info -->
+             <div class="box-info">
+                <!-- box-1 -->
+                <div class="box">
+                <img src="https://images.unsplash.com/photo-1667586733515-bf0bacbf325b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="box-1">
+
+                <h1> why you should not goes yogo</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos aperiam saepe, dolores adipisci soluta voluptatem, rerum quae architecto autem cum optio sunt ad explicabo enim, maxime at molestiae sint repudiandae.</p>
+                <div>
+                    <button class="btn">view more</button>
+                </div>
+
+                </div>
+                 <div class="box">
+                <img src="https://images.unsplash.com/photo-1667586733515-bf0bacbf325b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="box-1">
+
+                <h1> why you should not goes yogo</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos aperiam saepe, dolores adipisci soluta voluptatem, rerum quae architecto autem cum optio sunt ad explicabo enim, maxime at molestiae sint repudiandae.</p>
+                <div>
+                    <button class="btn">view more</button>
+                </div>
+
+                </div>
+               
+ <div class="box">
+                <img src="https://images.unsplash.com/photo-1667586733515-bf0bacbf325b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="box-1">
+
+                <h1> why you should not goes yogo</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos aperiam saepe, dolores adipisci soluta voluptatem, rerum quae architecto autem cum optio sunt ad explicabo enim, maxime at molestiae sint repudiandae.</p>
+                <div>
+                    <button class="btn">view more</button>
+                </div>
+
+                </div>
+               </div>
+
+        </div>
+ 
+    </section>
+    <section class="prefect-condition">
+        <div class="condition">
+            <h2>keep your body in perefect condition</h2>
+            <br>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt voluptate, vel placeat officiis quia ea rerum ducimus recusandae hic, asperiores autem maxime dolorem dolorum architecto ab fugit sapiente aspernatur quam.</p>
+
+        </div>
+    </section>
+    <section class="yoga-class">
+        <div class="box-classes">
+            <h2>choose your class and start you <br> train</h2>
+            <button class="btn">write to us</button>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; copyright 2022 mobaires - All rights reserves</p>
+        </div>
+    </footer>
+
+   
+      <script>
+        const hambuger = document.querySelector('.hambuger');
+        const mobileMenu = document.querySelector(".mobile-menu");
+        const icons = document.querySelectorAll("i");
+
+        hambuger.addEventListener("click", function (event) {
+            const isVisible = mobileMenu.getAttribute('data-visible');
+            if (isVisible == "true") {
+                // qari hiding
+                mobileMenu.setAttribute('data-visible', "false");
+                icons[0].setAttribute('data-visible', "true");
+                icons[1].setAttribute('data-visible', "false");
+            } else if (isVisible == "false") {
+                // soo bandhig showing
+             mobileMenu.setAttribute('data-visible', "true");
+                icons[0].setAttribute('data-visible', "false");
+                icons[1].setAttribute('data-visible', "true");
+            };
+        });
+
+
+    </script>
+
+    
+   
+    
+</body>
+</html>
